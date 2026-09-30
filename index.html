@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nabila Valenia Erdyan | Ravenclaw Interactive CV</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Fauna+One&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card-inner" id="magic-card-inner">
+      
+      <!-- FRONT SIDE (Resume CV) -->
+      <div class="card-face card-front">
+        <div style="text-align: center;">
+          <div class="house-badge">🦅 House of Ravenclaw</div>
+          <h1 class="wizard-name">Nabila Valenia Erdyan</h1>
+          <p class="wizard-quote">"Wit beyond measure is man's greatest treasure."</p>
+          
+          <!-- Tombol Interaktif -->
+          <div class="btn-group">
+            <button class="spell-btn" onclick="scrollToJob()">📜 Quick Scroll to Experience</button>
+            <button class="spell-btn" onclick="castFlipendo()">🪄 See Contact & Owl</button>
+          </div>
+        </div>
+
+        <h2 class="section-title">✨ Summary</h2>
+        <p style="font-size: 0.85rem; line-height: 1.5; color: #cbd5e1;">
+          I’m a passionate learner who values growth, teamwork, and making a positive impact. I believe challenges are opportunities to improve and strive to achieve meaningful goals.
+        </p>
+
+        <!-- Container target scroll -->
+        <h2 class="section-title" id="job-experience-section">📜 Work Experience</h2>
+        
+        <div class="job-item highlighted">
+          <div class="job-header">
+            <h3>Harisenin.com</h3>
+            <span class="manager-badge-glow">✨ Program Manager (L&D)</span>
+          </div>
+          <p class="job-date">Nov 2025 – Present</p>
+          <ul>
+            <li>Oversee holistic learning ecosystem, ensuring materials align with strategic goals.</li>
+            <li>Lead and mentor teaching staff, evaluating effectiveness to optimize delivery.</li>
+          </ul>
+          <button class="connect-btn" onclick="connectToJob('Program Manager at Harisenin.com')">💼 Connect for this Role</button>
+        </div>
+
+        <div class="job-item">
+          <div class="job-header">
+            <h3>Yes Academy</h3>
+            <span style="font-size:0.8rem; color:var(--gold)">L&D Specialist</span>
+          </div>
+          <p class="job-date">Feb 2025 – Oct 2025</p>
+          <ul>
+            <li>Managed Japanese training class operations & developed LMS content.</li>
+          </ul>
+          <button class="connect-btn" onclick="connectToJob('L&D Specialist at Yes Academy')">💼 Connect for this Role</button>
+        </div>
+
+        <div class="job-item">
+          <div class="job-header">
+            <h3>Bitlabs Academy</h3>
+            <span style="font-size:0.8rem; color:var(--gold)">Learning & Development</span>
+          </div>
+          <p class="job-date">Jul 2024 – Feb 2025</p>
+          <ul>
+            <li>Managed 50+ students with a <strong>98% graduation success rate</strong>.</li>
+          </ul>
+          <button class="connect-btn" onclick="connectToJob('Learning & Development at Bitlabs')">💼 Connect for this Role</button>
+        </div>
+
+        <div class="footer-text">
+          <p>"Mischief Managed • Order of Ravenclaw"</p>
+        </div>
+      </div>
+
+      <!-- BACK SIDE (Socials & Contacts) -->
+      <div class="card-face card-back">
+        <div>
+          <div style="text-align: center;">
+            <div class="house-badge">Owl Post & Connections</div>
+            <h2 class="wizard-name" style="margin-top: 15px;">Get In Touch</h2>
+          </div>
+
+          <h2 class="section-title">🦉 Send an Owl (Email)</h2>
+          <p style="font-size: 0.9rem;">valenkenshi@gmail.com</p>
+
+          <h2 class="section-title">📍 Magical Realm</h2>
+          <p style="font-size: 0.9rem;">Cibinong, Bogor, Jawa Barat</p>
+
+          <h2 class="section-title">📜 Scroll & Portfolios</h2>
+          <p style="margin-top: 8px;">
+            <a href="https://www.linkedin.com/in/nabila-valenia-3a9139222" target="_blank" style="color: var(--gold); text-decoration: underline;">
+              🔗 LinkedIn Profile
+            </a>
+          </p>
+          <p style="margin-top: 8px;">
+            <a href="https://github.com/ValenSawi" target="_blank" style="color: var(--gold); text-decoration: underline;">
+              🔗 GitHub Vault
+            </a>
+          </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+          <button class="spell-btn" onclick="castFlipendo()">Return to CV 🔄</button>
+          <div class="footer-text" style="margin-top: 15px;">
+            <p>"Ready for Vercel Deployment ✨"</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
